@@ -1,0 +1,338 @@
+/* 
+html{
+    scroll-behavior: smooth;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+text-decoration: none;
+transition: 0.2s;
+scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.341), rgba(255, 255, 255, 0.204)),url(../images/homebgm.jpg);
+
+}
+li{
+    list-style-type: none;
+}
+
+/*navbar css*/
+.navbar{
+    background-color: black;
+   padding-left: 15px;
+   padding-right: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+  
+}
+.logo{
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(225, 164, 11);
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.navitem{
+    color: rgb(225, 164, 11);
+    justify-content: space-between;
+    display: inline-block;
+    list-style: none;
+    margin-right: 60px;
+    font-weight: bold;
+
+}
+
+.navitem:hover{
+    color: white;       
+    }
+.navitem a{
+    text-decoration: none;
+    color:rgb(225, 164, 11) ;
+}
+.navitem a:hover{
+    color: white;
+    }
+
+
+.navbutton{
+    border: none;
+    border-radius: 5px;
+    margin-right: 25px;
+    height: 30px;
+    width: 70px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: rgb(225, 164, 11);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2);
+color: #000;
+
+}
+
+.navbutton:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.40),0 17px 50px 0 rgba(0,0,0,0.25);
+}
+.navbutton a{
+    text-decoration: none;
+    color: black;
+}
+
+.search_bar{
+    height: 30px;
+  display: flex;
+}
+.search_bar input{
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 100%;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+    color: #000;
+   
+
+}
+.search_bar .icon{
+height: 100%;
+width: 40px;
+line-height: 10px;
+
+border: 1px solid rgb(255, 255, 255);
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+background: rgb(225, 164, 11);
+color:#000;
+}
+/* navbar css end */
+
+
+.page{
+    display: block;
+}
+.food-head{
+    margin:40px;
+    padding:70px 30px 45px ;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 30;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.food-logo img{
+    height: 15vh;
+    width:30vh;
+    display:flex;
+    justify-content: center;
+}
+.pet-list p{
+    padding: 70px 30px 0;
+    text-align: center;
+}
+.pet-list{
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    align-items: center;
+    height: 50vh;
+    background:rgb(225, 164, 11);
+    
+   
+}
+.details{
+    margin-top: 2vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 2vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    display: flex;
+;
+
+}
+.pet-item{
+    height: 150px;
+    width: 150px;
+   
+}
+.pet-item img{
+object-fit: cover;
+width: 100%;
+height: 90%;
+border-radius: 30px;
+box-shadow: 2px 2px 5px;
+border-color: #000;
+}
+.pet-item:hover img{
+ background-color: black;
+ transition: 0.2s;   
+}
+.pet-list a{
+    text-decoration: none;
+    color: black;
+}
+.pet-item:hover a{
+    color:rgb(107, 59, 8);
+    transition: 0.3s;
+}
+.pet-list p{
+    padding: 70px 30px 0;
+    text-align: center;
+}
+.pet-categories{
+    margin-right: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(225, 164, 11);
+}
+.pet-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.pet-btn p{
+    font-size: 3.5vh;
+    text-transform: uppercase;
+    color:black;
+    font-size: 50px;
+}
+.pet-btn p:hover{
+    color:rgb(107, 59, 8);
+    transition: 0.3s;
+}
+/*foods*/
+.item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    margin: 3vh;
+
+}
+.align{
+    display: flex;
+    
+}
+.image{
+    height: 22vh;
+    width:15vh;
+}
+.subitems{
+    padding: 2vh;
+   margin: 1vh;
+    display: flex;
+    border-radius: 2vh;
+    background: rgb(225, 164, 11);
+
+}
+.subitems:hover{
+    background: #000;
+    cursor: pointer;
+    transition: 0.2s;
+  
+
+}
+.subitems:hover .details1{
+    color: rgb(225, 164, 11);
+}
+.subitems .image img{
+object-fit: cover;
+width: 100%;
+height: 90%;
+border-radius: 3vh;
+}
+.subtitle {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+
+   
+}
+  
+.details1{
+    position: relative;
+    margin-top: 0.5vh;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 2vh;
+    font-family: cursive;
+    text-transform: capitalize;
+    display: flex;
+    color: #000;
+    width: 20vh;
+    border-bottom: 1px dotted black;
+    padding: 2vh;
+}
+.add-cart{
+position:absolute;
+display: flex;
+column-gap: 8vh;
+left: 35%;
+bottom: 1vh;
+background: transparent;
+z-index: 1;
+width: 2.5vh;
+
+    
+}
+.add-cart button{
+    background: transparent;
+    border: none;
+    font-size: 3vh;
+    transition: 0.2s;
+  
+}
+
+.subitems:hover .add-cart button{
+    color: white;
+    cursor: pointer;
+ 
+}
+.title{
+    padding: 7vh;
+    font-size: 3.7vh;
+    text-transform: uppercase ;
+    text-align: center;
+    letter-spacing: 2vh;
+  font-family:cursive;
+    font-weight: 500;
+}
+.title a{
+    color: #000;
+}
+.classification {
+    border: none;
+    padding: 3vh 2vh;
+    border-radius: 1vh;
+    font-size: 2vh;
+    letter-spacing: 0.8vh;
+    background: rgb(225, 164, 11); 
+    color: black;
+    font-weight: 500;
+    font-family: cursive;
+
+}
+p .classification:hover {
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(225, 164, 11); 
+    background: black;
+    
+}
