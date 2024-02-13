@@ -20,7 +20,7 @@ li{
     list-style-type: none;
 }
 
-/*navbar css*/
+
 .navbar{
     background-color: black;
    padding-left: 15px;
@@ -215,7 +215,7 @@ border-color: #000;
     color:rgb(107, 59, 8);
     transition: 0.3s;
 }
-/*foods*/
+
 .item{
     display: flex;
     justify-content: space-evenly;
